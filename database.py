@@ -2,7 +2,7 @@ import gspread
 from gspread import worksheet
 from oauth2client.service_account import ServiceAccountCredentials
 import streamlit as st
-from streamlit_gsheets import GSheetsConnection
+# from streamlit_gsheets import GSheetsConnection
 import pandas as pd
 from typing import List
 

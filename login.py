@@ -1,7 +1,7 @@
 from openai import OpenAI
 import streamlit as st
 import pandas as pd
-from streamlit_gsheets import GSheetsConnection
+# from streamlit_gsheets import GSheetsConnection
 import database as db
 from streamlit_extras.switch_page_button import switch_page
 import help as hp
