@@ -11,7 +11,7 @@ class MealScanner:
     def __init__(self):
       st.subheader('Meal Scanner :knife_fork_plate:')
 
-      self.client = OpenAI(api_key = os.environ['OPENAI_NANNY'])
+      self.client = OpenAI(api_key=st.secrets['OPENAI_NANNY'])
       self.dw = DataWriter()  
 
     
