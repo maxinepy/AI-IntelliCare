@@ -64,8 +64,12 @@ with carebot:
 
     # Create a container for the input box
     input_container = st.container()
-    # client = OpenAI(api_key=os.environ['OPENAI_NANNY'])
-    client = OpenAI(api_key=st.secrets['OPENAI_NANNY'])
+
+    openai_api_key = os.environ['OPENAI_NANNY']  
+    st.write(f"API Key Length: {len(openai_api_key)}")
+    
+    client = OpenAI(api_key=os.environ['OPENAI_NANNY'])
+    # client = OpenAI(api_key=st.secrets['OPENAI_NANNY'])
 
     st.markdown("""
     <style>
